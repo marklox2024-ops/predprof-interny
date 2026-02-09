@@ -1,0 +1,28 @@
+# Supabase Configuration for ОлимпИУМ
+# This project uses ONLY client-side Supabase features
+# NO Edge Functions are deployed or used
+
+[project]
+# Project ID is set via environment variables
+
+[api]
+enabled = true
+
+[db]
+# Database with RLS policies
+
+[auth]
+# Supabase Auth for user authentication
+enabled = true
+
+[storage]
+# Storage not currently used
+enabled = false
+
+[realtime]
+# Realtime for PvP duels
+enabled = true
+
+# Edge Functions are COMPLETELY DISABLED
+[functions]
+enabled = false

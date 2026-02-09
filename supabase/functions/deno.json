@@ -1,0 +1,10 @@
+{
+  "tasks": {},
+  "imports": {},
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  },
+  "deploy": {
+    "exclude": ["**/*"]
+  }
+}

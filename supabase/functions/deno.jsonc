@@ -1,0 +1,8 @@
+{
+  // No Edge Functions to deploy
+  "tasks": {},
+  "compilerOptions": {},
+  "deploy": {
+    "exclude": ["**/*"]
+  }
+}

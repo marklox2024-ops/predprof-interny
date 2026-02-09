@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  olimpium:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: olimpium_app
+    ports:
+      - "3000:80"  # Приложение будет доступно на порту 3000
+    environment:
+      # Supabase переменные (замените на свои)
+      - VITE_SUPABASE_URL=${VITE_SUPABASE_URL:-https://yhbtywt7klb4zw1rxuphjx.supabase.co}
+      - VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY:-your_anon_key_here}
+    restart: unless-stopped
+    networks:
+      - olimpium-network
+
+networks:
+  olimpium-network:
+    driver: bridge

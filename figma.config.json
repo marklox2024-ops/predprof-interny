@@ -1,0 +1,16 @@
+{
+  "name": "ОлимпИУМ",
+  "version": "1.0.0",
+  "supabase": {
+    "edgeFunctions": {
+      "enabled": false,
+      "autoDeploy": false
+    },
+    "features": {
+      "auth": true,
+      "database": true,
+      "storage": false,
+      "realtime": true
+    }
+  }
+}
